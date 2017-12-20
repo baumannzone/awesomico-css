@@ -3,7 +3,7 @@ Animaciones CSS _awesómicas_. 👉 [DEMO](https://baumannzone.github.io/awesomi
 
 ![awesomico](awesomico.gif)
 
-:warning: Leer las instrucciones antes de ejecutar el fichero `index.html` :warning:
+## :warning: Leer las instrucciones antes de ejecutar el fichero `index.html` :warning:
 
 ### Requisitos
 :white_check_mark: Un navegador web (Recomendado **Chrome**. No se si funcionan todas las animaciones en :fire:🦊)  
