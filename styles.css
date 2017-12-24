@@ -9,6 +9,43 @@
   font-size: 18px;
 }
 
+section#search-box {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+ul#search-list {
+  display: none;
+}
+
+ul#search-list.show {
+  position: relative;
+  top: 0;
+  display: block;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+
+ul#search-list li {
+  padding: 6px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+ul#search-list li:hover {
+  background: #69b5ff;
+  color: #fff;
+}
+
 #title {
   font-size: 50px;
   color: white;
@@ -113,6 +150,8 @@
 
 #resultados img {
   border-radius: 0;
+  width: 250px;
+  height: 250px;
 }
 
 #resultados.awesome img {
