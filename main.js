@@ -136,7 +136,13 @@
       }
 
       function onclickUser(e) {
-        Main.setNewUser(e.target.textContent);
+        updateUser(e.target.textContent);
+      }
+
+      function updateUser(user) {
+        Main.setNewUser(user);
+        sIn.value = user;
+        sList.classList.remove('show');
       }
 
       function addNamesToList(names) {
@@ -154,7 +160,7 @@
 
         } else if ( names.length === 1) { // Just one result then show the info
           if (names[0] !== Main.user) {
-            Main.setNewUser(names[0]);
+           updateUser(names[0]);
           }
         } else { // Display a list of users that match the search
           clearList();
