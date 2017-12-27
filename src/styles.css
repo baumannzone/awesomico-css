@@ -1,5 +1,5 @@
 .ribbon {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   border: 0;
@@ -122,6 +122,10 @@
   border-radius: 0;
 }
 
+#resultados img.profile {
+  max-width: 200px;
+}
+
 #resultados.awesome img.profile {
   border-radius: 50%;
   -webkit-animation: crazyImg .3s linear infinite;
@@ -131,10 +135,10 @@
 }
 
 #resultados.awesome img.ribbon {
-  -webkit-animation: animation-ribbon 5s linear infinite;
-  -moz-animation: animation-ribbon 5s linear infinite;
-  -o-animation: animation-ribbon 5s linear infinite;
-  animation: animation-ribbon 5s linear infinite;
+  -webkit-animation: animation-ribbon 3s ease-in-out infinite;
+  -moz-animation: animation-ribbon 3s ease-in-out infinite;
+  -o-animation: animation-ribbon 3s ease-in-out infinite;
+  animation: animation-ribbon 3s ease-in-out infinite;
 }
 
 @keyframes changebackground {
@@ -387,10 +391,10 @@
   }
 
   50% {
-    transform: skewX(50deg) scale(3) translateX(-100vh) translateY(100px);
+    transform: skewX(400deg) scale(2) translateX(-400px) translateY(100px);
   }
 
   to {
-    transform: skewX(0deg) scale(1) translateX(0);
+    transform: skewX(100deg) scale(1) translateX(0) translateY(0);
   }
 }
