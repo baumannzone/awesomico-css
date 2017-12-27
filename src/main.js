@@ -58,16 +58,19 @@ const Main = {
   pintaDatos( data ) {
     document.getElementById( 'resultados' )
       .innerHTML = `<h1 id="title" class="hidden">🔥I LIKE IT AWESOME, AS MY CSS 😎🎩</h1>
-      <img src="${data.avatar_url}">
-      <p class="animation-9 name">Name: <span>${data.name} (${data.login})</span></p>
-      <p class="animation-2 email">Email: <span>${data.email ? Array.isArray( data.email ) ? data.email.join( ', ' ) : data.email : "Not found"}</span></p>
-      <p class="animation-3 bio">Bio: <span>${data.bio}</span></p>
-      <p class="animation-4 blog">Blog: <span>${data.blog}</span></p>
-      <p class="animation-5 company">Company: <span>${data.company}</span></p>
-      <p class="animation-6 v-rank">Vanity Rank: <span>${data.followers} | ${data.following} - ${Math.random().toFixed( 2, )}</span></p>
-      <p class="animation-7 i-rank">Impact Rank: <span>${data.public_repos} | ${data.public_gists} - ${Math.random().toFixed( 2, )}</span></p>
-      <p class="animation-8 hireable">Hireable: <span>${data.hireable}</span></p>
-      <p class="animation-1 location">Location: <span>${data.location}</span></p>`;
+      <a href="http://github.com/baumannzone/awesomico-css">
+        <img class="ribbon" src="assets/ribbon.png" alt="fork me on github">
+      </a>
+      <img class="profile" src="${data.avatar_url}">
+      <p class="animation-9">Name: <span>${data.name} (${data.login})</span></p>
+      <p class="animation-2">Email: <span>${data.email ? Array.isArray( data.email ) ? data.email.join( ', ' ) : data.email : "Not found"}</span></p>
+      <p class="animation-3">Bio: <span>${data.bio}</span></p>
+      <p class="animation-4">Blog: <span>${data.blog}</span></p>
+      <p class="animation-5">Company: <span>${data.company}</span></p>
+      <p class="animation-6">Vanity Rank: <span>${data.followers} | ${data.following} - ${Math.random().toFixed( 2, )}</span></p>
+      <p class="animation-7">Impact Rank: <span>${data.public_repos} | ${data.public_gists} - ${Math.random().toFixed( 2, )}</span></p>
+      <p class="animation-8">Hireable: <span>${data.hireable}</span></p>
+      <p class="animation-1">Location: <span>${data.location}</span></p>`;
 
     Main.hoverLayer();
   },
@@ -85,7 +88,6 @@ const Main = {
       resultados.classList.remove( 'awesome' );
       title.classList.add( 'hidden' );
       audio.pause();
-      audio.currentTime = 0;
     } );
   },
 };

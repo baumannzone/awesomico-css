@@ -1,7 +1,7 @@
 # Awesomico CSS
 Animaciones CSS _awesómicas_. 👉 [DEMO](https://baumannzone.github.io/awesomico-css/) 👈
 
-![awesomico](awesomico.gif)
+![awesomico](src/assets/awesomico.gif)
 
 :warning: Leer las instrucciones antes de ejecutar el fichero `index.html` :warning:
 
