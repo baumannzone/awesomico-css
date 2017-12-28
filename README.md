@@ -21,8 +21,10 @@ Animaciones CSS _awesómicas_. 👉 [DEMO](https://baumannzone.github.io/awesomi
 - ¿Sabes CSS y HTML y te gustaría aparecer en la lista de contributors? 
 - Haz tu aporte en las [issues](https://github.com/baumannzone/awesomico-css/issues) del repo, o a través de tu [pull request](https://github.com/baumannzone/awesomico-css/pulls)
 
+
 ### Contributors
 🤔🤔🤔🤔
+
 
 ### License
 [MIT](LICENSE) 
