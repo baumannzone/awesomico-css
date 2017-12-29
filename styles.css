@@ -1,3 +1,10 @@
+.ribbon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
 .hidden {
   display: none;
 }
@@ -39,6 +46,10 @@ section#search-box:hover {
   -moz-animation: backgroundPositionWithSkew 8s ease infinite;
   -o-animation: backgroundPositionWithSkew 8s ease infinite;
   animation: backgroundPositionWithSkew 8s ease infinite;
+}
+
+section#search-box input#gh-name {
+  max-width: 100%;
 }
 
 ul#search-list {
@@ -105,30 +116,30 @@ ul#search-list li:hover {
 
 #resultados.awesome {
   -webkit-animation: changebackground 1s infinite;
-  -moz-animation:    changebackground 1s infinite;
-  -o-animation:      changebackground 1s infinite;
-  animation:         changebackground 1s infinite;
+  -moz-animation: changebackground 1s infinite;
+  -o-animation: changebackground 1s infinite;
+  animation: changebackground 1s infinite;
 }
 
 #resultados.awesome p.animation-1 {
-  -webkit-animation: jello .3s infinite;
-  -moz-animation:    jello .3s infinite;
-  -o-animation:      jello .3s infinite;
-  animation:         jello .3s infinite;
+  -webkit-animation: animation1 .3s infinite;
+  -moz-animation: animation1 .3s infinite;
+  -o-animation: animation1 .3s infinite;
+  animation: animation1 .3s infinite;
 }
 
 #resultados.awesome p.animation-2 {
-  -webkit-animation: rubberBand .3s infinite;
-  -moz-animation:    rubberBand .3s infinite;
-  -o-animation:      rubberBand .3s infinite;
-  animation:         rubberBand .3s infinite;
+  -webkit-animation: animation2 .3s infinite;
+  -moz-animation: animation2 .3s infinite;
+  -o-animation: animation2 .3s infinite;
+  animation: animation2 .3s infinite;
 }
 
 #resultados.awesome p.animation-3 {
-  -webkit-animation: hinge .5s infinite;
-  -moz-animation:    hinge .5s infinite;
-  -o-animation:      hinge .5s infinite;
-  animation:         hinge .5s infinite;
+  -webkit-animation: animation3 .5s infinite;
+  -moz-animation: animation3 .5s infinite;
+  -o-animation: animation3 .5s infinite;
+  animation: animation3 .5s infinite;
 }
 
 #resultados.awesome p.animation-4 {
@@ -136,48 +147,48 @@ ul#search-list li:hover {
   font-size: 50px;
   position: absolute;
   font-weight: bolder;
-  -webkit-animation: fadeOutDownBig .5s infinite;
-  -moz-animation:    fadeOutDownBig .5s infinite;
-  -o-animation:      fadeOutDownBig .5s infinite;
-  animation:         fadeOutDownBig .5s infinite;
+  -webkit-animation: animation4 .5s infinite;
+  -moz-animation: animation4 .5s infinite;
+  -o-animation: animation4 .5s infinite;
+  animation: animation4 .5s infinite;
 }
 
 #resultados.awesome p.animation-5 {
   font-size: 30px;
-  -webkit-animation: lightSpeedIn 1s infinite;
-  -moz-animation:    lightSpeedIn 1s infinite;
-  -o-animation:      lightSpeedIn 1s infinite;
-  animation:         lightSpeedIn 1s infinite;
+  -webkit-animation: animation5 1s infinite;
+  -moz-animation: animation5 1s infinite;
+  -o-animation: animation5 1s infinite;
+  animation: animation5 1s infinite;
 }
 
 #resultados.awesome p.animation-6 {
   color: deeppink;
-  -webkit-animation: zoomInRight 2s infinite;
-  -moz-animation:    zoomInRight 2s infinite;
-  -o-animation:      zoomInRight 2s infinite;
-  animation:         zoomInRight 2s infinite;
+  -webkit-animation: animation6 2s infinite;
+  -moz-animation: animation6 2s infinite;
+  -o-animation: animation6 2s infinite;
+  animation: animation6 2s infinite;
 }
 
 #resultados.awesome p.animation-7 {
-  -webkit-animation: lightSpeedOut 1.5s infinite;
-  -moz-animation:    lightSpeedOut 1.5s infinite;
-  -o-animation:      lightSpeedOut 1.5s infinite;
-  animation:         lightSpeedOut 1.5s infinite;
+  -webkit-animation: animation7 1.5s infinite;
+  -moz-animation: animation7 1.5s infinite;
+  -o-animation: animation7 1.5s infinite;
+  animation: animation7 1.5s infinite;
 }
 
 #resultados.awesome p.animation-8 {
   font-weight: bolder;
   -webkit-animation: crazyImg 1s linear infinite;
-  -moz-animation:    crazyImg 1s linear infinite;
-  -o-animation:      crazyImg 1s linear infinite;
-  animation:         crazyImg 1s linear infinite;
+  -moz-animation: crazyImg 1s linear infinite;
+  -o-animation: crazyImg 1s linear infinite;
+  animation: crazyImg 1s linear infinite;
 }
 
 #resultados.awesome p.animation-9 {
   -webkit-animation: changebackground .3s infinite;
-  -moz-animation:    changebackground .3s infinite;
-  -o-animation:      changebackground .3s infinite;
-  animation:         changebackground .3s infinite;
+  -moz-animation: changebackground .3s infinite;
+  -o-animation: changebackground .3s infinite;
+  animation: changebackground .3s infinite;
 }
 
 #resultados img {
@@ -186,55 +197,122 @@ ul#search-list li:hover {
   height: 250px;
 }
 
-#resultados.awesome img {
+#resultados img.profile {
+  max-width: 200px;
+}
+
+#resultados.awesome img.profile {
   border-radius: 50%;
   -webkit-animation: crazyImg .3s linear infinite;
-  -moz-animation:    crazyImg .3s linear infinite;
-  -o-animation:      crazyImg .3s linear infinite;
-  animation:         crazyImg .3s linear infinite;
+  -moz-animation: crazyImg .3s linear infinite;
+  -o-animation: crazyImg .3s linear infinite;
+  animation: crazyImg .3s linear infinite;
+}
+
+#resultados.awesome img.ribbon {
+  -webkit-animation: animation-ribbon 3s ease-in-out infinite;
+  -moz-animation: animation-ribbon 3s ease-in-out infinite;
+  -o-animation: animation-ribbon 3s ease-in-out infinite;
+  animation: animation-ribbon 3s ease-in-out infinite;
 }
 
 @keyframes changebackground {
-  0%   {background: red;}
-  10%  {background: greenyellow;}
-  20%  {background: yellow;}
-  30%  {background: deepskyblue;}
-  40%  {background: turquoise;}
-  50%  {background: deeppink;}
-  60%  {background: blueviolet;}
-  70%  {background: forestgreen;}
-  80%  {background: lightyellow;}
-  90%  {background: darkorange;}
-  100% {background: red;}
+  0% {
+    background: red;
+  }
+  10% {
+    background: greenyellow;
+  }
+  20% {
+    background: yellow;
+  }
+  30% {
+    background: deepskyblue;
+  }
+  40% {
+    background: turquoise;
+  }
+  50% {
+    background: deeppink;
+  }
+  60% {
+    background: blueviolet;
+  }
+  70% {
+    background: forestgreen;
+  }
+  80% {
+    background: lightyellow;
+  }
+  90% {
+    background: darkorange;
+  }
+  100% {
+    background: red;
+  }
 }
 
 @-webkit-keyframes changebackground {
-  0%   {background: red;}
-  10%  {background: greenyellow;}
-  20%  {background: yellow;}
-  30%  {background: deepskyblue;}
-  40%  {background: turquoise;}
-  50%  {background: deeppink;}
-  60%  {background: blueviolet;}
-  70%  {background: forestgreen;}
-  80%  {background: lightyellow;}
-  90%  {background: darkorange;}
-  100% {background: red;}
+  0% {
+    background: red;
+  }
+  10% {
+    background: greenyellow;
+  }
+  20% {
+    background: yellow;
+  }
+  30% {
+    background: deepskyblue;
+  }
+  40% {
+    background: turquoise;
+  }
+  50% {
+    background: deeppink;
+  }
+  60% {
+    background: blueviolet;
+  }
+  70% {
+    background: forestgreen;
+  }
+  80% {
+    background: lightyellow;
+  }
+  90% {
+    background: darkorange;
+  }
+  100% {
+    background: red;
+  }
 }
 
 @keyframes crazyImg {
-  0%   { transform: scale(1) rotate(0deg); }
-  50%  { transform: scale(1.5) rotate(180deg); }
-  100% { transform: scale(1) rotate(360deg); }
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 @-webkit-keyframes crazyImg {
-  0%   { transform: scale(1) rotate(0deg); }
-  50%  { transform: scale(1.5) rotate(180deg); }
-  100% { transform: scale(1) rotate(360deg); }
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(2) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
-@keyframes jello {
+@keyframes animation1 {
   from, 11.1%, to {
     transform: none;
   }
@@ -268,7 +346,7 @@ ul#search-list li:hover {
   }
 }
 
-@keyframes rubberBand {
+@keyframes animation2 {
   from {
     transform: scale3d(1, 1, 1);
   }
@@ -298,7 +376,7 @@ ul#search-list li:hover {
   }
 }
 
-@keyframes hinge {
+@keyframes animation3 {
   0% {
     transform-origin: top left;
     animation-timing-function: ease-in-out;
@@ -323,7 +401,7 @@ ul#search-list li:hover {
   }
 }
 
-@keyframes fadeOutDownBig {
+@keyframes animation4 {
   from {
     opacity: 1;
   }
@@ -334,7 +412,7 @@ ul#search-list li:hover {
   }
 }
 
-@keyframes lightSpeedIn {
+@keyframes animation5 {
   from {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
@@ -356,7 +434,7 @@ ul#search-list li:hover {
   }
 }
 
-@keyframes zoomInRight {
+@keyframes animation6 {
   from {
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
@@ -370,7 +448,7 @@ ul#search-list li:hover {
   }
 }
 
-@keyframes lightSpeedOut {
+@keyframes animation7 {
   from {
     opacity: 1;
     transform: scale(1);
@@ -481,5 +559,19 @@ ul#search-list li:hover {
   }
   100% {
     transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes animation-ribbon {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: skewX(400deg) scale(2) translateX(-400px) translateY(100px);
+  }
+
+  to {
+    transform: skewX(100deg) scale(1) translateX(0) translateY(0);
   }
 }

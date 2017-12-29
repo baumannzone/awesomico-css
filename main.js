@@ -66,6 +66,9 @@
     pintaDatos( data ) {
       document.getElementById( 'resultados' )
         .innerHTML = `<h1 id="title" class="hidden">🔥I LIKE IT AWESOME, AS MY CSS 😎🎩</h1>
+		<a href="http://github.com/baumannzone/awesomico-css">
+        	<img class="ribbon" src="assets/ribbon.png" alt="fork me on github">
+      	</a>
         <img src="${data.avatar_url}">
         <p class="animation-9 name">Name: <span>${data.name} (${data.login})</span></p>
         <p class="animation-2 email">Email: <span>${data.email ? Array.isArray( data.email ) ? data.email.join( ', ' ) : data.email : "Not found"}</span></p>
