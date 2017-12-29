@@ -36,10 +36,10 @@ section#search-box {
 section#search-box:hover {
   color: #fff;
   background: linear-gradient(272deg,
-    #577bac, #ac9757, #ac579a, #ac7957,
-    #86a1c6, #0b0d03, #00ff7a, #5704ff,
-    #ff0404, #508e14, #22148e, #0afdff,
-    #ff620a, #9f765f, #fbfbfb, #ff1f8a
+  #577bac, #ac9757, #ac579a, #ac7957,
+  #86a1c6, #0b0d03, #00ff7a, #5704ff,
+  #ff0404, #508e14, #22148e, #0afdff,
+  #ff620a, #9f765f, #fbfbfb, #ff1f8a
   );
   background-size: 3200% 3200%;
   -webkit-animation: backgroundPositionWithSkew 8s ease infinite;
@@ -461,74 +461,74 @@ ul#search-list li:hover {
 }
 
 @-webkit-keyframes backgroundPositionWithSkew {
-  0%  {
+  0% {
     transform: skewX(10deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
   50% {
     transform: skewX(-10deg) skewY(-22deg);
-    background-position:100% 50%
+    background-position: 100% 50%
   }
   75% {
     transform: skewX(-12deg) skewY(25deg);
   }
-  100%  {
+  100% {
     transform: skewX(12deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
 }
 
 @-moz-keyframes backgroundPositionWithSkew {
-  0%  {
+  0% {
     transform: skewX(10deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
   50% {
     transform: skewX(-10deg) skewY(-22deg);
-    background-position:100% 50%
+    background-position: 100% 50%
   }
   75% {
     transform: skewX(-12deg) skewY(25deg);
   }
-  100%  {
+  100% {
     transform: skewX(12deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
 }
 
 @-o-keyframes backgroundPositionWithSkew {
-  0%  {
+  0% {
     transform: skewX(10deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
   50% {
     transform: skewX(-10deg) skewY(-22deg);
-    background-position:100% 50%
+    background-position: 100% 50%
   }
   75% {
     transform: skewX(-12deg) skewY(25deg);
   }
-  100%  {
+  100% {
     transform: skewX(12deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
 }
 
 @keyframes backgroundPositionWithSkew {
- 0%  {
+  0% {
     transform: skewX(10deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
   50% {
     transform: skewX(-10deg) skewY(-22deg);
-    background-position:100% 50%
+    background-position: 100% 50%
   }
   75% {
     transform: skewX(-12deg) skewY(25deg);
   }
-  100%  {
+  100% {
     transform: skewX(12deg) skewY(15deg);
-    background-position:0% 50%
+    background-position: 0 50%
   }
 }
 
