@@ -1,4 +1,4 @@
-(function() {
+(function () {
   const Main = {
     user: 'baumannzone',
 
@@ -66,12 +66,12 @@
     pintaDatos( data ) {
       document.getElementById( 'resultados' )
         .innerHTML = `<h1 id="title" class="hidden">🔥I LIKE IT AWESOME, AS MY CSS 😎🎩</h1>
-		<a href="http://github.com/baumannzone/awesomico-css">
-        	<img class="ribbon" src="assets/ribbon.png" alt="fork me on github">
-      	</a>
+        <a href="http://github.com/baumannzone/awesomico-css">
+          <img class="ribbon" src="assets/ribbon.png" alt="fork me on github">
+        </a>
         <img src="${data.avatar_url}">
         <p class="animation-9 name">Name: <span>${data.name} (${data.login})</span></p>
-        <p class="animation-2 email">Email: <span>${data.email ? Array.isArray( data.email ) ? data.email.join( ', ' ) : data.email : "Not found"}</span></p>
+        <p class="animation-2 email">Email: <span>${data.email ? data.email : "Not found"}</span></p>
         <p class="animation-3 bio">Bio: <span>${data.bio}</span></p>
         <p class="animation-4 blog">Blog: <span>${data.blog}</span></p>
         <p class="animation-5 company">Company: <span>${data.company}</span></p>
@@ -96,96 +96,95 @@
         resultados.classList.remove( 'awesome' );
         title.classList.add( 'hidden' );
         audio.pause();
-        audio.currentTime = 0;
       } );
     },
 
-    setNewUser(user) {
+    setNewUser( user ) {
       Main.user = user;
       Main.display();
     },
 
-    search(string, cb) {
+    search( string, cb ) {
       Main.peticionAjax( 'https://api.github.com/search/users?q=' + string, function ( data ) {
         let names = [];
 
         try {
-          names = JSON.parse(data).items.map(function (item) {
+          names = JSON.parse( data ).items.map( function ( item ) {
             return item.login;
-          });
-        } catch(e) {
-          console.error(e);
+          } );
+        } catch ( e ) {
+          console.error( e );
         }
 
-        cb(names);
-      });
+        cb( names );
+      } );
     },
 
     searchEngine() {
-      const sIn = document.getElementById('gh-name');
-      const sList = document.getElementById('search-list');
+      const sIn = document.getElementById( 'gh-name' );
+      const sList = document.getElementById( 'search-list' );
       let timeOut = null;
 
       function clearTM() {
-        if (timeOut !== null) {
-          clearTimeout(timeOut);
+        if ( timeOut !== null ) {
+          clearTimeout( timeOut );
         }
       }
 
       function clearList() {
-        sList.childNodes.forEach(function(li) {
-          sList.removeChild(li);
-        });
+        sList.childNodes.forEach( function ( li ) {
+          sList.removeChild( li );
+        } );
       }
 
-      function onclickUser(e) {
-        updateUser(e.target.textContent);
+      function onclickUser( e ) {
+        updateUser( e.target.textContent );
       }
 
-      function updateUser(user) {
-        Main.setNewUser(user);
+      function updateUser( user ) {
+        Main.setNewUser( user );
         sIn.value = user;
-        sList.classList.remove('show');
+        sList.classList.remove( 'show' );
       }
 
-      function addNamesToList(names) {
-        names.forEach(function(name) {
-          const li = document.createElement('li');
+      function addNamesToList( names ) {
+        names.forEach( function ( name ) {
+          const li = document.createElement( 'li' );
           li.className = 'dynamic-link';
           li.innerHTML = name;
-          sList.appendChild(li);
+          sList.appendChild( li );
           li.onclick = onclickUser;
-        });
+        } );
       }
 
-      function displaySearchResults(names) {
-        if (!names.length) { // Show message - no results
+      function displaySearchResults( names ) {
+        if ( !names.length ) { // Show message - no results
 
-        } else if ( names.length === 1) { // Just one result then show the info
-          if (names[0] !== Main.user) {
-           updateUser(names[0]);
+        } else if ( names.length === 1 ) { // Just one result then show the info
+          if ( names[ 0 ] !== Main.user ) {
+            updateUser( names[ 0 ] );
           }
         } else { // Display a list of users that match the search
           clearList();
-          addNamesToList(names);
-          sList.classList.add('show');
+          addNamesToList( names );
+          sList.classList.add( 'show' );
         }
       }
 
-      sIn.addEventListener('keyup', function(e) {
+      sIn.addEventListener( 'keyup', function ( e ) {
         const isEnter = e.keyCode === 13;
         clearTM();
 
-        if (isEnter) {
-          Main.search(sIn.value, displaySearchResults);
+        if ( isEnter ) {
+          Main.search( sIn.value, displaySearchResults );
         } else {
-          timeOut = setTimeout(function() {
+          timeOut = setTimeout( function () {
             clearTM();
-            Main.search(sIn.value, displaySearchResults);
-          }, 350);
+            Main.search( sIn.value, displaySearchResults );
+          }, 350 );
         }
-      });
-    }
+      } );
+    },
   };
 
   Main.init();
