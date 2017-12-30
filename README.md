@@ -23,6 +23,8 @@ Animaciones CSS _awesómicas_ (Ahora con buscador de usuarios ). 👉 [DEMO](htt
 
 
 ### Contributors  
+- @baumannzone
+- @sediug
 🤔🤔🤔🤔  
 
 
