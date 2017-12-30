@@ -26,7 +26,7 @@ section#search-box {
   box-sizing: border-box;
   background: #f4f4f4;
   border: 1px solid #ddd;
-  z-indez: 100;
+  z-index: 100;
   -webkit-animation: moveSearchAround 6s linear infinite;
   -moz-animation: moveSearchAround 6s linear infinite;
   -o-animation: moveSearchAround 6s linear infinite;
