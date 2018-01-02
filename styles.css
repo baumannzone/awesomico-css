@@ -191,13 +191,8 @@ ul#search-list li:hover {
   animation: changebackground .3s infinite;
 }
 
-#resultados img {
-  border-radius: 0;
-  width: 250px;
-  height: 250px;
-}
-
 #resultados img.profile {
+  border-radius: 0;
   max-width: 200px;
 }
 
