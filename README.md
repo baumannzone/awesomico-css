@@ -9,7 +9,7 @@ Animaciones CSS _awesómicas_ (Ahora con buscador de usuarios). 👉 [DEMO](http
 :white_check_mark: Un navegador web (Recomendado **Chrome**. No se si funcionan todas las animaciones en :fire:🦊)  
 :white_check_mark: Altavoces a todo volumen 🔊  
 :white_check_mark: Tener sentido del humor*<sup>1</sup>  
-:white_check_mark: Darle follow a [@baumannzone](https://twitter.com/baumannzone)  
+:white_check_mark: Darle follow a [@baumannzone](https://twitter.com/baumannzone) *<sup>2</sup>  
 
 ### Disclaimer
 🚨 No apto para personas epilépticas.  
