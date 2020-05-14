@@ -17,6 +17,16 @@
         "maintenance",
         "infra"
       ]
+    },
+    {
+      "login": "Sediug",
+      "name": "Sebastián Cabanas",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/11425316?v=4",
+      "profile": "https://github.com/Sediug",
+      "contributions": [
+        "code",
+        "example"
+      ]
     }
   ],
   "contributorsPerLine": 7,
