@@ -1,5 +1,5 @@
 # Awesomico CSS
-Animaciones CSS _awesómicas_ (Ahora con buscador de usuarios ). 👉 [DEMO](https://baumannzone.github.io/awesomico-css/) 👈
+Animaciones CSS _awesómicas_ (Ahora con buscador de usuarios). 👉 [DEMO](https://baumannzone.github.io/awesomico-css/) 👈
 
 ![awesomico](assets/awesomico.gif)
 
@@ -9,24 +9,17 @@ Animaciones CSS _awesómicas_ (Ahora con buscador de usuarios ). 👉 [DEMO](htt
 :white_check_mark: Un navegador web (Recomendado **Chrome**. No se si funcionan todas las animaciones en :fire:🦊)  
 :white_check_mark: Altavoces a todo volumen 🔊  
 :white_check_mark: Tener sentido del humor*<sup>1</sup>  
-:white_check_mark: Darle follow a [@baumannzone](https://twitter.com/baumannzone) y a [@OSW](https://twitter.com/os_weekends) *<sup>2</sup>  
+:white_check_mark: Darle follow a [@baumannzone](https://twitter.com/baumannzone)  
 
 ### Disclaimer
-:white_check_mark: No apto para epilépticos.  
-:white_check_mark: \*1: Esto es **imprescindible**. De lo contrario, podrías sufrir algún tormento en el futuro.  
-:white_check_mark: \*2: Esto en realidad no es obligatorio, pero no está de más, que es gratis y no cuesta nada. ~Yo lo pongo, y si cuela, cuela.~ :joy:  
+🚨 No apto para personas epilépticas.  
+🚨 \*1: Muy importante, de lo contrario, podrías sufrir algún tormento en el futuro.  
+🚨 \*2: Esto es muy recomendado para no perderse ninguna actualización :joy:  
 
 ### Contribuciones Bienvenidas
-- ¿Eres un experto troleando?  
+- ¿Te gusta **trolear** y crear experiencias de usuario **awesomicas**?  
 - ¿Sabes CSS y HTML y te gustaría aparecer en la lista de contributors?  
-- Haz tu aporte en las [issues](https://github.com/baumannzone/awesomico-css/issues) del repo, o a través de tu [pull request](https://github.com/baumannzone/awesomico-css/pulls)  
+- Haz tu aporte en las [issues](https://github.com/baumannzone/awesomico-css/issues) del repo, o a través de un [pull request](https://github.com/baumannzone/awesomico-css/pulls)  
 
-
-### Contributors  
-- @baumannzone
-- @sediug
-🤔🤔🤔🤔  
-
-
-### License  
+### Licencia  
 [MIT](LICENSE)
