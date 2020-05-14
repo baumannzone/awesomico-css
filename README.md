@@ -36,6 +36,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://twitter.com/baumannzone"><img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Baumann</b></sub></a><br /><a href="https://github.com/baumannzone/awesomico-css/commits?author=baumannzone" title="Code">💻</a> <a href="#design-baumannzone" title="Design">🎨</a> <a href="https://github.com/baumannzone/awesomico-css/pulls?q=is%3Apr+reviewed-by%3Abaumannzone" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-baumannzone" title="Maintenance">🚧</a> <a href="#infra-baumannzone" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/Sediug"><img src="https://avatars3.githubusercontent.com/u/11425316?v=4" width="100px;" alt=""/><br /><sub><b>Sebastián Cabanas</b></sub></a><br /><a href="https://github.com/baumannzone/awesomico-css/commits?author=Sediug" title="Code">💻</a> <a href="#example-Sediug" title="Examples">💡</a></td>
   </tr>
 </table>
